@@ -4,22 +4,22 @@
             <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
                 <!-- Filter by categories -->
                 <select class="form-select py-2 shadow-sm text-capitalize mb-4" v-model="filterByCategory">
-                    <option value="">All Categories</option>
+                    <option value="">Toutes les categories</option>
                     <option :value="product" v-for="product in eliminateDuplicatedCategories($store.state.products)" :key="product.id">
                         {{product}}
                     </option>
                 </select>
                 <!-- Sort by prices -->
                 <select class="form-select py-2 shadow-sm mb-4" v-model="sortByPrice" @change="sortProductsByPrice($store.state.products)">
-                    <option value="" disabled>Sort By Price</option>
-                    <option value="increasingOrder">Increasing Order</option>
-                    <option value="decreasingOrder">Decreasing Order</option>
+                    <option value="" disabled>Trier par Prix</option>
+                    <option value="increasingOrder">Ordre croissant</option>
+                    <option value="decreasingOrder">Ordre Decroissant</option>
                 </select>
                 <!-- Sort by ratings -->
                 <select class="form-select py-2 shadow-sm mb-4" v-model="sortByRating" @change="sortProductsByRating($store.state.products)">
-                    <option value="" disabled>Sort By Rating</option>
-                    <option value="increasingOrder">Increasing Order</option>
-                    <option value="decreasingOrder">Decreasing Order</option>
+                    <option value="" disabled>Trier par Moyenne</option>
+                    <option value="increasingOrder">Ordre croissant</option>
+                    <option value="decreasingOrder">Ordre Decroissant</option>
                 </select>
             </div>
             <div class="col-xl-10 col-lg-9 col-md-8 col-sm-7">
@@ -28,7 +28,7 @@
                     <span class="input-group-text bg-white" id="basic-addon1">
                         <i class="fas fa-search"></i>
                     </span>
-                    <input type="text" class="form-control py-2" placeholder="Search for a product..." aria-label="Username" aria-describedby="basic-addon1" v-model="searchProduct">
+                    <input type="text" class="form-control py-2" placeholder="Chercher un Produit" aria-label="Username" aria-describedby="basic-addon1" v-model="searchProduct">
                 </div>
                 <!-- Display Products -->
                 <div class="d-flex flex-wrap justify-content-sm-between justify-content-center">
@@ -40,13 +40,13 @@
                             <div>
                                 <h4 class="card-title mb-3">{{formatProduct(product.title)}}</h4>
                                 <p class="my-2">
-                                    <span class="text-muted">Category: </span>
+                                    <span class="text-muted">Categorie: </span>
                                     <span class="text-capitalize">
                                         {{product.category}}
                                     </span>
                                 </p>
                                 <p class="my-2">
-                                    <span class="text-muted">Rating: </span>
+                                    <span class="text-muted">Moyenne: </span>
                                     <span class="rating shadow-sm" :class="{
                                         highRating: product.rating.rate <= 5,
                                         avgRating: product.rating.rate < 4,
@@ -56,7 +56,7 @@
                                     </span> 
                                 </p>
                                 <p class="my-2">
-                                    <span class="text-muted">Price: </span>
+                                    <span class="text-muted">Prix: </span>
                                     <span class="text-capitalize">
                                         <i class="fas fa-dollar-sign"></i>
                                         {{formatPrice(product.price)}}
@@ -66,7 +66,7 @@
                             <div class="d-inline-block mt-4">
                                 <router-link :to="'/product/' + product.id" class="text-decoration-none">
                                     <button class="btn btn-warning btn-sm w-100 d-flex align-items-center justify-content-center">
-                                        More Info
+                                        Plus d'informations 
                                         <i class="fas fa-angle-double-right mx-1"></i>
                                     </button>
                                 </router-link>

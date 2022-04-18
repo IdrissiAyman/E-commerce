@@ -10,9 +10,9 @@
                     <div class="col-md-7 col-sm-6 fs-5 d-flex flex-column justify-content-between align-items-start mb-md-0 mb-5 px-4">
                         <div class="mt-4 mt-md-0">
                             <h2 class="mb-4">{{product.title}}</h2>
-                            <p class="my-2">Category: <span class="text-capitalize">{{product.category}}</span></p>
+                            <p class="my-2">Categorie: <span class="text-capitalize">{{product.category}}</span></p>
                             <p class="my-2">
-                                Rating:
+                                Moyenne:
                                 <span class="rating shadow-sm" :class="{
                                     highRating: product.rating.rate <= 5,
                                     avgRating: product.rating.rate < 4,
@@ -22,7 +22,7 @@
                                 </span> 
                             </p>
                             <p class="my-2">
-                                Price:
+                                Prix:
                                 <span class="text-capitalize">
                                     <i class="fas fa-dollar-sign"></i>
                                     {{formatPrice(product.price)}}
@@ -35,14 +35,14 @@
                             </p>
                             <button class="btn btn-success mt-2 btn-sm" @click="addToCard(product)">
                                 <i class="fas fa-cart-plus mx-1"></i>
-                                Add to Card
+                                Ajouter au panier
                             </button>
                         </div>
                         <div class="d-inline-block mt-4">
                             <router-link to="/home" class="text-decoration-none">
                                 <a href="#" class="btn btn-warning d-flex align-items-center">
                                     <i class="fas fa-arrow-left mx-1"></i>
-                                    Back to Main Page
+                                    Retourner à la page d'accueil
                                 </a>
                             </router-link>
                         </div>

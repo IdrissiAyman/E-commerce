@@ -1,10 +1,10 @@
-//Html de la vue
+
 <template>
 <div style="background-color: black; color:antiquewhite">
 <main class="login">
 		<section class="forms">
 
-			<form class="login" @submit.prevent="login">
+			<form class="login" >
 				<h2>Login</h2>
 				<input 
 					type="email" 
@@ -24,7 +24,7 @@
 		</section>
 	</main>
 </div>
-<h1>Hello world</h1>
+
 <span> {{
     errorMessage
     }}

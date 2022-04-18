@@ -4,7 +4,7 @@
       <div v-if="$store.state.card.length == 0" >
         <div class="alert alert-danger shadow-sm" role="alert">
           <i class="fas fa-exclamation-triangle mx-1"></i>
-          Your shopping card is empty.
+          Ton panier est vide .
         </div>
         <div class="d-inline-block mt-5">
             <router-link to="/home" class="text-decoration-none">
@@ -14,6 +14,15 @@
                 </a>
             </router-link>
         </div>
+         <div style="padding-left: 80%;" class="d-inline-block mt-5">
+            <router-link to="/paiement" class="text-decoration-none">
+                <a href="#" class="btn btn-warning d-flex align-items-center">
+                    <i class="fas fa-arrow-right mx-1"></i>
+                    Payer
+                </a>
+            </router-link>
+        </div>
+       
       </div>
       <div v-else>
         <div class="table-responsive">
@@ -22,10 +31,10 @@
               <tr class="text-center">
                 <th scope="col">#</th>
                 <th scope="col">Image</th>
-                <th scope="col">Name</th>
-                <th scope="col">Category</th>
-                <th scope="col">Price</th>
-                <th scope="col">Rating</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Categorie</th>
+                <th scope="col">Prix</th>
+                <th scope="col">Moyenne</th>
                 <th></th>
               </tr>
             </thead>
@@ -69,6 +78,14 @@
                   </a>
               </router-link>
           </div>
+            <div style="padding-left: 80%;" class="d-inline-block mt-5">
+            <router-link to="/paiement" class="text-decoration-none">
+                <a href="#" class="btn btn-warning d-flex align-items-center">
+                    <i class="fas fa-arrow-right mx-1"></i>
+                    Payement
+                </a>
+            </router-link>
+        </div>
           <div class="d-flex align-items-center mt-sm-0 mt-4">
             <p class="mx-2 fs-5">Total Price: </p>
             <p class="fs-3">
@@ -83,6 +100,7 @@
 
 <script>
 import Headerr from '../components/Headerr.vue'
+
 export default {
     name: 'CardDetails',
     components: {Headerr},
