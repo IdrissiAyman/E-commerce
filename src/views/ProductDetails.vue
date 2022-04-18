@@ -1,6 +1,6 @@
 <template>
     <Headerr />
-    <div class="container-md mt-5">
+    <div  class="container-md mt-5">
         <div v-for="product in $store.state.products" :key="product.id">
             <div v-if="product.id == $route.params.id">
                 <div class="row">
@@ -39,7 +39,7 @@
                             </button>
                         </div>
                         <div class="d-inline-block mt-4">
-                            <router-link to="/" class="text-decoration-none">
+                            <router-link to="/home" class="text-decoration-none">
                                 <a href="#" class="btn btn-warning d-flex align-items-center">
                                     <i class="fas fa-arrow-left mx-1"></i>
                                     Back to Main Page
@@ -80,7 +80,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
     .row{
         .product-img{
             height: 60vh;

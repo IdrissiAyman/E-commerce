@@ -1,5 +1,6 @@
 //Html de la vue
 <template>
+<div style="background-color: black; color:antiquewhite">
 <main class="login">
 		<section class="forms">
 
@@ -13,15 +14,16 @@
 					type="password" 
 					placeholder="Password" 
 					v-model="password" />
-				<input 
+				
+				 <router-link to="/home" class="text-decoration-none"> <input 
 					type="submit"
 
-				 v-on:click="connect()" />
+				 v-on:click="connect()" /></router-link>
 			</form>
 
 		</section>
 	</main>
-
+</div>
 <h1>Hello world</h1>
 <span> {{
     errorMessage
@@ -59,6 +61,7 @@ export default defineComponent({
     .then((userCredential) => {
     // Signed in 
     alert("connect");
+	
     const user = userCredential.user;
     // ...
   })
@@ -106,6 +109,7 @@ h2 {
 	font-size: 2rem;
 	text-transform: uppercase;
 	margin-bottom: 2rem;
+	text-align: center;
 }
 input {
 	appearance: none;

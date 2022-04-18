@@ -7,10 +7,10 @@
           Your shopping card is empty.
         </div>
         <div class="d-inline-block mt-5">
-            <router-link to="/" class="text-decoration-none">
+            <router-link to="/home" class="text-decoration-none">
                 <a href="#" class="btn btn-warning d-flex align-items-center">
                     <i class="fas fa-arrow-left mx-1"></i>
-                    Back to Main Page
+                    Retourner à la page d'accueil
                 </a>
             </router-link>
         </div>
@@ -62,10 +62,10 @@
         </div>
         <div class="d-flex flex-sm-row flex-column align-items-center justify-content-between mt-5">
           <div class="d-inline-block">
-              <router-link to="/" class="text-decoration-none">
+              <router-link to="/home" class="text-decoration-none">
                   <a href="#" class="btn btn-warning d-flex align-items-center">
                       <i class="fas fa-arrow-left mx-1"></i>
-                      Back to Main Page
+                      Retourner à la page d'accueil
                   </a>
               </router-link>
           </div>
