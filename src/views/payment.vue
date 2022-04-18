@@ -123,8 +123,9 @@
         </div>
     </div>
       <div style="padding-left: 50%;" class="d-inline-block mt-5">
-            <router-link to="/paiement" class="text-decoration-none">
+            <router-link to="/home" class="text-decoration-none">
                 <a href="#" class="btn btn-warning d-flex align-items-center">
+                  
                     <i class="fas fa-arrow-right mx-1"></i>
                     Pay
                 </a>
