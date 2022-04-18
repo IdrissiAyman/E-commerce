@@ -1,5 +1,5 @@
-<template>
-    <div class="container-md my-5">
+<template >
+    <div  class="container-md my-5">
         <div class="row">
             <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
                 <!-- Filter by categories -->
