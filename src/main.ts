@@ -10,8 +10,8 @@ import store from './store'
 
 
 
-const app = createApp(App).use(store);
-//createApp(App).use(store).use(router).mount('#app')
+
+
 
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -26,12 +26,14 @@ const firebaseConfig = {
   messagingSenderId: "1081779811051",
   appId: "1:1081779811051:web:353b86dd2da8e65e4b44ae"
 };
-
+const app = initializeApp(firebaseConfig);
+createApp(App).use(store).use(router).mount('#app')
 // Initialize Firebase
-const app2 = initializeApp(firebaseConfig);
-app.use(router);
+//const app2 = initializeApp(firebaseConfig);
+//app.use(router);
 
-app.mount("#app");
+//app.mount("#app");
+ //app=initializeApp(firebaseConfig);
 
 
 
