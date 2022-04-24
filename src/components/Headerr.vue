@@ -1,7 +1,7 @@
 <template>
 <header class="py-3">
       <div class="container-md d-flex justify-content-between align-items-center">
-          <h2 class="text-white" >Shopee-Co</h2>
+         <router-link to="/home"> <h2 class="text-white" >Shopee-Co</h2></router-link>
           <router-link to="/cardDetails" class="text-decoration-none">
             <h2 class="text-white cursor">
                 <i class="fas fa-shopping-cart mx-1" ></i>
