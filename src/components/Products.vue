@@ -17,7 +17,7 @@
                 </select>
                 <!-- Sort by ratings -->
                 <select class="form-select py-2 shadow-sm mb-4" v-model="sortByRating" @change="sortProductsByRating($store.state.products)">
-                    <option value="" disabled>Trier par Moyenne</option>
+                    <option value="" disabled>Trier par avis</option>
                     <option value="increasingOrder">Ordre croissant</option>
                     <option value="decreasingOrder">Ordre Decroissant</option>
                 </select>
@@ -46,7 +46,7 @@
                                     </span>
                                 </p>
                                 <p class="my-2">
-                                    <span class="text-muted">Moyenne: </span>
+                                    <span class="text-muted">avis: </span>
                                     <span class="rating shadow-sm" :class="{
                                         highRating: product.rating.rate <= 5,
                                         avgRating: product.rating.rate < 4,
