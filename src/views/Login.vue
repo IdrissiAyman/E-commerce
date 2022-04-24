@@ -1,16 +1,16 @@
 
 <template>
-<div style="background-color: black; color:antiquewhite">
+<div style="background-color: white; color:black;background-image: url(../../1.jpg);">
 <main class="login">
 		<section class="forms">
 
 			<form class="login" >
 				<h2>Login</h2>
-				<input 
+				<input style="background-color: balck; color:white;"
 					type="email" 
 					placeholder="Email address"
 					v-model="email" />
-				<input 
+				<input style="background-color: balck; color:white;"
 					type="password" 
 					placeholder="Password" 
 					v-model="password" />
@@ -68,8 +68,11 @@ export default defineComponent({
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    this.errorMessage= error.message  });
+    this.errorMessage= error.message;
+	alert("verifier votre mot de passe ou bien votre identifiant ");
+	  });
       }
+	
   },
   mounted() {
  
