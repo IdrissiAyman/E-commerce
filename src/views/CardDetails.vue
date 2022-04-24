@@ -34,7 +34,7 @@
                 <th scope="col">Nom</th>
                 <th scope="col">Categorie</th>
                 <th scope="col">Prix</th>
-                <th scope="col">Moyenne</th>
+                <th scope="col">avis</th>
                 <th></th>
               </tr>
             </thead>

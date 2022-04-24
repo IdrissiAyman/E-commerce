@@ -1,16 +1,16 @@
 
 <template>
-<div style="background-color: white; color:black;background-image: url(../../1.jpg);">
+<div style="background-color: white; color:black;">
 <main class="login">
 		<section class="forms">
 
 			<form class="login" >
 				<h2>Login</h2>
-				<input style="background-color: black; color:white;"
+				<input 
 					type="email" 
 					placeholder="Email address"
 					v-model="email" />
-				<input style="background-color: black; color:white;"
+				<input 
 					type="password" 
 					placeholder="Password" 
 					v-model="password" />
@@ -29,13 +29,6 @@
     errorMessage
     }}
 </span>
-    <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" v-model="email" required>
-
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password"  v-model="password" required>
-
-     <button v-on:click="connect()" type="submit">Login</button>
 </template>
  
 //Script de la vue

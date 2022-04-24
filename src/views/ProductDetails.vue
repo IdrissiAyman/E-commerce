@@ -12,7 +12,7 @@
                             <h2 class="mb-4">{{product.title}}</h2>
                             <p class="my-2">Categorie: <span class="text-capitalize">{{product.category}}</span></p>
                             <p class="my-2">
-                                Moyenne:
+                                avis:
                                 <span class="rating shadow-sm" :class="{
                                     highRating: product.rating.rate <= 5,
                                     avgRating: product.rating.rate < 4,

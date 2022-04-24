@@ -1,6 +1,8 @@
+
 <template>
-<Headerr/>
-<body class="settings">
+
+<body style="body1" class="settings">
+ 
   <div>
     <div class="max-width">
       <section class="payment turquoise">
@@ -103,7 +105,7 @@
   font-style: normal;
 }
 
-body {
+.body1 {
   font-family: "adelle", adelle, serif;
   font-weight: 100;
   height: 100%;
@@ -420,5 +422,6 @@ p .pf {
     max-width: 40%;
   }
 }
+
 </style>
 
