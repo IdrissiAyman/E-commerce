@@ -6,11 +6,11 @@
 
 			<form class="login" >
 				<h2>Login</h2>
-				<input style="background-color: balck; color:white;"
+				<input style="background-color: black; color:white;"
 					type="email" 
 					placeholder="Email address"
 					v-model="email" />
-				<input style="background-color: balck; color:white;"
+				<input style="background-color: black; color:white;"
 					type="password" 
 					placeholder="Password" 
 					v-model="password" />
