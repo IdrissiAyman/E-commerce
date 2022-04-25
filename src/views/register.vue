@@ -5,7 +5,7 @@
 		<section class="forms">
 
 			<form class="login" >
-				<h2>Login</h2>
+				<h2>Register</h2>
 				<input 
 					type="email" 
 					placeholder="Email address"
@@ -14,15 +14,16 @@
 					type="password" 
 					placeholder="Password" 
 					v-model="password" />
+                    	<input 
+					type="password" 
+					placeholder=" Repeat Password" 
+					v-model="password" />
 				
 				 <router-link to="/home" class="text-decoration-none"> <input 
 					type="submit"
 
 				 v-on:click="connect()" /></router-link>
-				 <router-link to="/register" class="text-decoration-none"> <input 
-					type="submit" value="Signup"
-
-				 v-on:click="connect()" /></router-link>
+				 
 				 
 			</form>
 			
@@ -59,7 +60,7 @@ export default defineComponent({
     signInWithEmailAndPassword(auth, this.email, this.password)
     .then((userCredential) => {
     // Signed in 
-    alert("connect");
+   
 	
     const user = userCredential.user;
     // ...
