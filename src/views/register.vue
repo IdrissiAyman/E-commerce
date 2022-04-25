@@ -17,7 +17,7 @@
                     	<input 
 					type="password" 
 					placeholder=" Repeat Password" 
-					v-model="password" />
+					/>
 				
 				 <router-link to="/home" class="text-decoration-none"> <input 
 					type="submit"
